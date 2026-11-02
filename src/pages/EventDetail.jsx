@@ -70,8 +70,6 @@ const allEventsData = [
 
     "Each team must prepare a mandatory six-slide PPT.",
 
-    "AI, AI agents, and all AI-based tools are STRICTLY PROHIBITED throughout the event. Violations will result in immediate disqualification.",
-
     "Official documentation and library references are permitted.",
 
     "Problem statements and important updates will be shared through the official WhatsApp group."
