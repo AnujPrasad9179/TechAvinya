@@ -185,45 +185,23 @@ export default function Sponsors() {
           ))}
         </div>
 
-        <div className="w-full mb-16">
-          <div className="text-center mb-6">
-            <span className="text-xs font-mono uppercase tracking-[0.25em] text-amber-400 bg-amber-950/60 px-4 py-1.5 rounded-full border border-amber-400/40">
-              ⭐ Flagship Festival Presenter ⭐
-            </span>
-          </div>
-
-          {/* <div className="relative rounded-3xl p-6 sm:p-10 bg-gradient-to-br from-[#12241a]/90 via-[#06140f]/95 to-[#020a06]/98 border-2 border-emerald-400/60 shadow-[0_0_50px_rgba(16,185,129,0.3)] backdrop-blur-2xl">
-            <div className="relative z-10 flex flex-col lg:flex-row items-center gap-8 justify-between">
-              <div className="flex flex-col items-center text-center lg:items-start lg:text-left flex-shrink-0">
-                <div className="w-64 h-32 sm:w-72 sm:h-36 bg-white/95 rounded-2xl p-4 flex items-center justify-center shadow-lg border-2 border-white/80">
-                  <img src="/gfg.png" alt="GeeksforGeeks" className="max-h-24 max-w-full object-contain" />
-                </div>
-              </div>
-              <div className="flex-1 text-center lg:text-left">
-                <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
-                  GeeksforGeeks
-                </h2>
-              </div>
-            </div>
-          </div> */}
-        </div>
-
-        {/* --- FIXED SPONSOR CARDS SECTION --- */}
+        {/* --- FIXED SPONSOR CARDS SECTION (All in one line) --- */}
         <div className="w-full mb-20 flex justify-center">
-          <div className="flex flex-wrap justify-center items-stretch gap-8 max-w-4xl px-4 w-full">
+          <div className="flex flex-wrap lg:flex-nowrap justify-center items-stretch gap-6 max-w-6xl px-4 w-full">
             {[
               { name: "NAGALAND COLLEGEMEDIA", logo: "/nagamedia.jpeg", tier: "Media Partner" },
               { name: "HackerAuth", logo: "/hackerauth.png", tier: "Event Partner" },
+              { name: "Community Heros(MLBB)", logo: "/mlbb.jpeg", tier: "Event Sponsor" },
             ].map((sp, i) => (
               <div 
                 key={i} 
-                className="w-64 sm:w-72 bg-slate-900/60 backdrop-blur-md border border-slate-700/50 rounded-2xl p-5 flex flex-col items-center justify-between transition-all duration-300 hover:scale-105 hover:border-cyan-500/50 shadow-lg text-center"
+                className="w-full sm:w-72 bg-slate-900/60 backdrop-blur-md border border-slate-700/50 rounded-2xl p-5 flex flex-col items-center justify-between transition-all duration-300 hover:scale-105 hover:border-cyan-500/50 shadow-lg text-center flex-1"
               >
                 <div className="w-full h-36 bg-white rounded-xl flex items-center justify-center p-4 overflow-hidden shadow-inner">
                   <img src={sp.logo} alt={sp.name} className="max-h-full max-w-full object-contain" />
                 </div>
                 <div className="mt-4 w-full flex flex-col justify-end flex-grow">
-                  <h4 className="text-white font-bold text-lg tracking-wide truncate">{sp.name}</h4>
+                  <h4 className="text-white font-bold text-base sm:text-lg tracking-wide truncate">{sp.name}</h4>
                   <p className="text-cyan-400 font-medium text-xs mt-1 uppercase tracking-wider">{sp.tier}</p>
                 </div>
               </div>
